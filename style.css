@@ -1,0 +1,135 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f8faff; /* Soft light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    color: #4a6fa5; /* Light Navy Blue */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Input Section */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #c5d1e8;
+    border-radius: 6px;
+    background-color: #f0f5ff; /* Very light blue */
+}
+
+#addTaskButton {
+    padding: 12px 20px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #388e3c; /* Darker Green */
+}
+
+/* Tasks Section */
+.lists-container {
+    display: flex;
+    gap: 20px;
+}
+
+.tasks-section {
+    flex: 1;
+    background:rgb(199, 229, 235);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tasks-section h2 {
+    color: #7f2ba0; /* Soft Navy */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: rgb(219, 232, 243);
+    border: 1px solid #8fd1dd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed {
+    background-color: #e9f7e9; /* Light green background for completed */
+    color: #4caf50;
+    border: 1px solid #b2dfb2;
+    font-weight: bold;
+}
+
+.task.completed .badge {
+    background-color: #4caf50;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+/* Buttons */
+.task button {
+    background-color: #e74c3c; /* Red */
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+    background-color: #c0392b; /* Darker Red */
+}
